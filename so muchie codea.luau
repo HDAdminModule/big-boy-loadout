@@ -134,8 +134,8 @@ UI["f"] = Instance.new("UICorner", UI["e"])
 UI["10"] = Instance.new("LocalScript", UI["e"])
 
 UI["11"] = Instance.new("UIDragDetector", UI["2"])
-UIDragDetector.ActivatedCursorIcon = "rbxassetid://6549216050"
-UIDragDetector.CursorIcon = "rbxassetid://6549216050"
+UI["11"].ActivatedCursorIcon = "rbxassetid://6549216050"
+UI["11"].CursorIcon = "rbxassetid://6549216050"
 
 -- // StarterGui.PoserLoadout.Frame.TextButton.LocalScript \\ --
 local function SCRIPT_7()
