@@ -130,27 +130,35 @@ UICorner_4.Parent = Dex
 
 -- Scripts
 
-local function TKDJZ_fake_script() -- ESP.LocalScript 
+local function SIVRWE_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/refs/heads/master/UnnamedESP.lua"))()
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/refs/heads/master/UnnamedESP.lua"))()
+	end)
 end
-coroutine.wrap(TKDJZ_fake_script)()
-local function ZOIIDD_fake_script() -- IY.LocalScript 
+coroutine.wrap(SIVRWE_fake_script)()
+local function NHVONEM_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	script.Parent.MouseButton1Click:Connect(function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
 end
-coroutine.wrap(ZOIIDD_fake_script)()
-local function RSJJR_fake_script() -- Fly.LocalScript 
+coroutine.wrap(NHVONEM_fake_script)()
+local function GGXX_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
-	loadstring(game:HttpGet("https://pastebin.com/raw/MsL78SwX"))()
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/MsL78SwX"))()
+	end)
 end
-coroutine.wrap(RSJJR_fake_script)()
-local function CUFWBKX_fake_script() -- Dex.LocalScript 
+coroutine.wrap(GGXX_fake_script)()
+local function HQPJELB_fake_script() -- Dex.LocalScript 
 	local script = Instance.new('LocalScript', Dex)
 
-	loadstring(game:HttpGet("https://pastebin.com/raw/0gDUjVQD"))()
+	script.Parent.MouseButton1Click:Connect(function() 
+		loadstring(game:HttpGet("https://pastebin.com/raw/0gDUjVQD"))()
+	end)
 end
-coroutine.wrap(CUFWBKX_fake_script)()
+coroutine.wrap(HQPJELB_fake_script)()
