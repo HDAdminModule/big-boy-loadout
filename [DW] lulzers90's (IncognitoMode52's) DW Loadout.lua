@@ -204,18 +204,17 @@ task.spawn(SCRIPT_7)
 -- // StarterGui.Loadout.Frame.Noxious.LocalScript \\ --
 local function SCRIPT_9()
 local script = UI["9"]
-	local function Noxious()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NXSendeavor/endeavor/refs/heads/main/DSWDSLendeavor"))()
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		Noxious()
-		game:GetService("StarterGui"):SetCore("SendNotification",{
-			Title = "Notification", -- Required
-			Text = "cool", -- Required
-		})
-	end)
+local function Noxious()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NXSendeavor/endeavor/refs/heads/main/DSWDendeavor"))()
 end
+
+script.Parent.MouseButton1Click:Connect(function()
+	Noxious()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Notification", -- Required
+		Text = "cool", -- Required
+	})
+end)
 task.spawn(SCRIPT_9)
 -- // StarterGui.Loadout.Frame.G0bby.LocalScript \\ --
 local function SCRIPT_b()
