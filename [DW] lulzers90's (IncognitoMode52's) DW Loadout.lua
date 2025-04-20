@@ -1,223 +1,6 @@
--- // GUI TO LUA \\ --
-
--- // INSTANCES: 16 | SCRIPTS: 6 | MODULES: 0 \\ --
-
-local UI = {}
-
--- // StarterGui.Loadout \\ --
-UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
-UI["1"]["Name"] = [[Loadout]]
-UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
-
--- // StarterGui.Loadout.Frame \\ --
-UI["2"] = Instance.new("Frame", UI["1"])
-UI["2"]["BorderSizePixel"] = 0
-UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2"]["Size"] = UDim2.new(0, 412, 0, 242)
-UI["2"]["Position"] = UDim2.new(0.25606, 0, 0.28512, 0)
-UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2"]["BackgroundTransparency"] = 0.5
-
--- // StarterGui.Loadout.Frame.TextLabel \\ --
-UI["3"] = Instance.new("TextLabel", UI["2"])
-UI["3"]["TextWrapped"] = true
-UI["3"]["Interactable"] = false
-UI["3"]["BorderSizePixel"] = 0
-UI["3"]["TextScaled"] = true
-UI["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3"]["TextSize"] = 14
-UI["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3"]["BackgroundTransparency"] = 1
-UI["3"]["Size"] = UDim2.new(0, 412, 0, 28)
-UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3"]["Text"] = [[lulzers90's (IncognitoMode52's) DW Loadout!]]
-
--- // StarterGui.Loadout.Frame.Close \\ --
-UI["4"] = Instance.new("TextButton", UI["2"])
-UI["4"]["TextWrapped"] = true
-UI["4"]["BorderSizePixel"] = 0
-UI["4"]["TextSize"] = 14
-UI["4"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
-UI["4"]["TextScaled"] = true
-UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 190, 190)
-UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["4"]["Size"] = UDim2.new(0, 52, 0, 50)
-UI["4"]["Name"] = [[Close]]
-UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4"]["Text"] = [[X]]
-UI["4"]["Position"] = UDim2.new(1, 0, -0.20661, 0)
-
--- // StarterGui.Loadout.Frame.Close.UICorner \\ --
-UI["5"] = Instance.new("UICorner", UI["4"])
-UI["5"]["CornerRadius"] = UDim.new(1, 0)
-
--- // StarterGui.Loadout.Frame.Close.LocalScript \\ --
-UI["6"] = Instance.new("LocalScript", UI["4"])
-
-
--- // StarterGui.Loadout.Frame.Dragify \\ --
-UI["7"] = Instance.new("LocalScript", UI["2"])
-UI["7"]["Name"] = [[Dragify]]
-
--- // StarterGui.Loadout.Frame.Noxious \\ --
-UI["8"] = Instance.new("TextButton", UI["2"])
-UI["8"]["TextWrapped"] = true
-UI["8"]["BorderSizePixel"] = 0
-UI["8"]["TextSize"] = 14
-UI["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["8"]["TextScaled"] = true
-UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["8"]["Size"] = UDim2.new(0, 193, 0, 50)
-UI["8"]["Name"] = [[Noxious]]
-UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["8"]["Text"] = [[Noxious Hub]]
-UI["8"]["Position"] = UDim2.new(0.01699, 0, 0.1157, 0)
-
--- // StarterGui.Loadout.Frame.Noxious.LocalScript \\ --
-UI["9"] = Instance.new("LocalScript", UI["8"])
-
-
--- // StarterGui.Loadout.Frame.G0bby \\ --
-UI["a"] = Instance.new("TextButton", UI["2"])
-UI["a"]["TextWrapped"] = true
-UI["a"]["BorderSizePixel"] = 0
-UI["a"]["TextSize"] = 14
-UI["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a"]["TextScaled"] = true
-UI["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["a"]["Size"] = UDim2.new(0, 193, 0, 50)
-UI["a"]["Name"] = [[G0bby]]
-UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a"]["Text"] = [[G0bbyD0llan's Hub V6]]
-UI["a"]["Position"] = UDim2.new(0.50243, 0, 0.1157, 0)
-
--- // StarterGui.Loadout.Frame.G0bby.LocalScript \\ --
-UI["b"] = Instance.new("LocalScript", UI["a"])
-
-
--- // StarterGui.Loadout.Frame.B0bby \\ --
-UI["c"] = Instance.new("TextButton", UI["2"])
-UI["c"]["TextWrapped"] = true
-UI["c"]["BorderSizePixel"] = 0
-UI["c"]["TextSize"] = 14
-UI["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c"]["TextScaled"] = true
-UI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["c"]["Size"] = UDim2.new(0, 193, 0, 50)
-UI["c"]["Name"] = [[B0bby]]
-UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c"]["Text"] = [[(BETA) 
-B0bby Hub]]
-UI["c"]["Position"] = UDim2.new(0.01699, 0, 0.36364, 0)
-
--- // StarterGui.Loadout.Frame.B0bby.LocalScript \\ --
-UI["d"] = Instance.new("LocalScript", UI["c"])
-
-
--- // StarterGui.Loadout.Frame.Hex \\ --
-UI["e"] = Instance.new("TextButton", UI["2"])
-UI["e"]["TextWrapped"] = true
-UI["e"]["BorderSizePixel"] = 0
-UI["e"]["TextSize"] = 14
-UI["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["e"]["TextScaled"] = true
-UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["e"]["Size"] = UDim2.new(0, 193, 0, 50)
-UI["e"]["Name"] = [[Hex]]
-UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["e"]["Text"] = [[Hex Hub]]
-UI["e"]["Position"] = UDim2.new(0.50243, 0, 0.36364, 0)
-
--- // StarterGui.Loadout.Frame.Hex.LocalScript \\ --
-UI["f"] = Instance.new("LocalScript", UI["e"])
-
-
--- // StarterGui.Loadout.Frame.TextLabel \\ --
-UI["10"] = Instance.new("TextLabel", UI["2"])
-UI["10"]["TextWrapped"] = true
-UI["10"]["BorderSizePixel"] = 0
-UI["10"]["TextScaled"] = true
-UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["10"]["TextSize"] = 14
-UI["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["10"]["Size"] = UDim2.new(0, 397, 0, 89)
-UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["10"]["Text"] = [[idk what else to put here lol ]]
-UI["10"]["Position"] = UDim2.new(0.00728, 0, 0.59504, 0)
-
--- // StarterGui.Loadout.Frame.Close.LocalScript \\ --
-local function SCRIPT_6()
-local script = UI["6"]
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent:Destroy()
-	end)
-end
-task.spawn(SCRIPT_6)
--- // StarterGui.Loadout.Frame.Dragify \\ --
-local function SCRIPT_7()
-local script = UI["7"]
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-		dragToggle = nil
-		dragSpeed = 0.15
-		dragInput = nil
-		dragStart = nil
-		dragPos = nil
-		function updateInput(input)
-			Delta = input.Position - dragStart
-			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
-		end
-		Frame.InputBegan:Connect(function(input)
-			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-				dragToggle = true
-				dragStart = input.Position
-				startPos = Frame.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragToggle = false
-					end
-				end)
-			end
-		end)
-		Frame.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				dragInput = input
-			end
-		end)
-		game:GetService("UserInputService").InputChanged:Connect(function(input)
-			if input == dragInput and dragToggle then
-				updateInput(input)
-			end
-		end)
-	end
-	dragify(script.Parent)
-	
-end
-task.spawn(SCRIPT_7)
--- // StarterGui.Loadout.Frame.Noxious.LocalScript \\ --
-local function SCRIPT_9()
-local script = UI["9"]
 local function Noxious()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NXSendeavor/endeavor/refs/heads/main/DSWDendeavor"))()
 end
-
-script.Parent.MouseButton1Click:Connect(function()
-	Noxious()
-	game:GetService("StarterGui"):SetCore("SendNotification",{
-		Title = "Notification", -- Required
-		Text = "cool", -- Required
-	})
-end)
-task.spawn(SCRIPT_9)
--- // StarterGui.Loadout.Frame.G0bby.LocalScript \\ --
-local function SCRIPT_b()
 local script = UI["b"]
 	local function G0bby()
 		local CoreGui = game:GetService("CoreGui")
@@ -1048,7 +831,230 @@ local script = UI["b"]
 	
 		return G2L["1"], require;
 	end
+	local function B0bby()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJunior1/Sup/refs/heads/main/Bobhub"))()
+	end
+	local function Hex()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/RayField/refs/heads/main/Hex%20Hub%20Converted2Github"))()
+	end
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 16 | SCRIPTS: 6 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.Loadout \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[Loadout]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.Loadout.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["Size"] = UDim2.new(0, 412, 0, 242)
+UI["2"]["Position"] = UDim2.new(0.25606, 0, 0.28512, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.Loadout.Frame.TextLabel \\ --
+UI["3"] = Instance.new("TextLabel", UI["2"])
+UI["3"]["TextWrapped"] = true
+UI["3"]["Interactable"] = false
+UI["3"]["BorderSizePixel"] = 0
+UI["3"]["TextScaled"] = true
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3"]["TextSize"] = 14
+UI["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["BackgroundTransparency"] = 1
+UI["3"]["Size"] = UDim2.new(0, 412, 0, 28)
+UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Text"] = [[lulzers90's (IncognitoMode52's) DW Loadout!]]
+
+-- // StarterGui.Loadout.Frame.Close \\ --
+UI["4"] = Instance.new("TextButton", UI["2"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextSize"] = 14
+UI["4"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 190, 190)
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["Size"] = UDim2.new(0, 52, 0, 50)
+UI["4"]["Name"] = [[Close]]
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[X]]
+UI["4"]["Position"] = UDim2.new(1, 0, -0.20661, 0)
+
+-- // StarterGui.Loadout.Frame.Close.UICorner \\ --
+UI["5"] = Instance.new("UICorner", UI["4"])
+UI["5"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.Loadout.Frame.Close.LocalScript \\ --
+UI["6"] = Instance.new("LocalScript", UI["4"])
+
+
+-- // StarterGui.Loadout.Frame.Dragify \\ --
+UI["7"] = Instance.new("LocalScript", UI["2"])
+UI["7"]["Name"] = [[Dragify]]
+
+-- // StarterGui.Loadout.Frame.Noxious \\ --
+UI["8"] = Instance.new("TextButton", UI["2"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["TextSize"] = 14
+UI["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["Size"] = UDim2.new(0, 193, 0, 50)
+UI["8"]["Name"] = [[Noxious]]
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[Noxious Hub]]
+UI["8"]["Position"] = UDim2.new(0.01699, 0, 0.1157, 0)
+
+-- // StarterGui.Loadout.Frame.Noxious.LocalScript \\ --
+UI["9"] = Instance.new("LocalScript", UI["8"])
+
+
+-- // StarterGui.Loadout.Frame.G0bby \\ --
+UI["a"] = Instance.new("TextButton", UI["2"])
+UI["a"]["TextWrapped"] = true
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["TextSize"] = 14
+UI["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["TextScaled"] = true
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a"]["Size"] = UDim2.new(0, 193, 0, 50)
+UI["a"]["Name"] = [[G0bby]]
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["Text"] = [[G0bbyD0llan's Hub V6]]
+UI["a"]["Position"] = UDim2.new(0.50243, 0, 0.1157, 0)
+
+-- // StarterGui.Loadout.Frame.G0bby.LocalScript \\ --
+UI["b"] = Instance.new("LocalScript", UI["a"])
+
+
+-- // StarterGui.Loadout.Frame.B0bby \\ --
+UI["c"] = Instance.new("TextButton", UI["2"])
+UI["c"]["TextWrapped"] = true
+UI["c"]["BorderSizePixel"] = 0
+UI["c"]["TextSize"] = 14
+UI["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["TextScaled"] = true
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c"]["Size"] = UDim2.new(0, 193, 0, 50)
+UI["c"]["Name"] = [[B0bby]]
+UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["Text"] = [[(BETA) 
+B0bby Hub]]
+UI["c"]["Position"] = UDim2.new(0.01699, 0, 0.36364, 0)
+
+-- // StarterGui.Loadout.Frame.B0bby.LocalScript \\ --
+UI["d"] = Instance.new("LocalScript", UI["c"])
+
+
+-- // StarterGui.Loadout.Frame.Hex \\ --
+UI["e"] = Instance.new("TextButton", UI["2"])
+UI["e"]["TextWrapped"] = true
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["TextSize"] = 14
+UI["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["TextScaled"] = true
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["Size"] = UDim2.new(0, 193, 0, 50)
+UI["e"]["Name"] = [[Hex]]
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Text"] = [[Hex Hub]]
+UI["e"]["Position"] = UDim2.new(0.50243, 0, 0.36364, 0)
+
+-- // StarterGui.Loadout.Frame.Hex.LocalScript \\ --
+UI["f"] = Instance.new("LocalScript", UI["e"])
+
+
+-- // StarterGui.Loadout.Frame.TextLabel \\ --
+UI["10"] = Instance.new("TextLabel", UI["2"])
+UI["10"]["TextWrapped"] = true
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["TextScaled"] = true
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10"]["TextSize"] = 14
+UI["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Size"] = UDim2.new(0, 397, 0, 89)
+UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Text"] = [[idk what else to put here lol ]]
+UI["10"]["Position"] = UDim2.new(0.00728, 0, 0.59504, 0)
+
+-- // StarterGui.Loadout.Frame.Close.LocalScript \\ --
+local function SCRIPT_6()
+local script = UI["6"]
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+task.spawn(SCRIPT_6)
+-- // StarterGui.Loadout.Frame.Dragify \\ --
+local function SCRIPT_7()
+local script = UI["7"]
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
 	
+end
+task.spawn(SCRIPT_7)
+-- // StarterGui.Loadout.Frame.Noxious.LocalScript \\ --
+local function SCRIPT_9()
+local script = UI["9"]
+
+script.Parent.MouseButton1Click:Connect(function()
+	Noxious()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Notification", -- Required
+		Text = "cool", -- Required
+	})
+end)
+task.spawn(SCRIPT_9)
+-- // StarterGui.Loadout.Frame.G0bby.LocalScript \\ --
+local function SCRIPT_b()
+local script = UI["b"]
 	script.Parent.MouseButton1Click:Connect(function()
 		G0bby()
 		game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -1061,9 +1067,6 @@ task.spawn(SCRIPT_b)
 -- // StarterGui.Loadout.Frame.B0bby.LocalScript \\ --
 local function SCRIPT_d()
 local script = UI["d"]
-	local function B0bby()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJunior1/Sup/refs/heads/main/Bobhub"))()
-	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		B0bby()
@@ -1077,9 +1080,6 @@ task.spawn(SCRIPT_d)
 -- // StarterGui.Loadout.Frame.Hex.LocalScript \\ --
 local function SCRIPT_f()
 local script = UI["f"]
-	local function Hex()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/RayField/refs/heads/main/Hex%20Hub%20Converted2Github"))()
-	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		Hex()
